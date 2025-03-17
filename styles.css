@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body, html {
     margin: 0;
     padding: 0;
@@ -9,32 +13,6 @@ body, html {
 
 section {
     scroll-margin-top: 100px;
-}
-
-/* Navbar */
-nav {
-    position: fixed; /* Mantém o nav fixo no topo */
-    top: 0;
-    width: 100%;
-    padding: 15px 0;
-    z-index: 10; /* Garante que o nav fique acima do header */
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2em;
 }
 
 /* Hero Section */
@@ -50,7 +28,7 @@ header {
     animation: gradientAnimation 10s ease infinite; /* Animação infinita */
     color: white; /* Garante que o texto seja visível */
     overflow: hidden; /* Evita que elementos ultrapassem os limites */
-    z-index: 1; /* Garante que o header fique abaixo do nav */
+    z-index: 1; 
 }
 
 @keyframes gradientAnimation {
